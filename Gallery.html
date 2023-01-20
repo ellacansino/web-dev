@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WebDev Project</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            html {
+                font-size: 20px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            body{
+                height: 250vh;
+                background: url(./images/pexels-ahmed-muntasir-912050.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center ;
+            }
+
+            header {
+                height: 3.3rem;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            header nav ul li {
+                display: inline-block;
+                font-weight: 700;
+                margin: 1rem 1.5rem 1rem
+            }
+
+            header nav ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            header nav ul li a:hover {
+                border-bottom: 2px solid #130c1a;
+                color: #000;
+                text-decoration: none;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 3rem;
+            }
+
+            section h1 {
+                color: #fff;
+            }
+
+            section img {
+                width: 20rem;
+                height: 20rem;
+                border-radius: 100px;
+                box-shadow: 0 0px 90px rgb(13, 13, 14);
+            }
+
+            section div {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                row-gap: 3rem;
+                column-gap: 3rem;
+            }
+           
+        </style>
+    </head>
+    <body>
+       <header>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                </ul>
+                <hr>
+            </nav>
+       </header>
+
+       
+       <main>
+            <section>
+                <h1>Gallery Section</h1>
+                <div>
+                    <a href="./images/imagesforgallery/IMG_3632.jpeg" target="_blank"><img src="./images/imagesforgallery/IMG_3632.jpeg" alt="image1"></a>
+                    <a href="./images/imagesforgallery/IMG_1821.jpeg" target="_blank"><img src="./images/imagesforgallery/IMG_1821.jpeg" alt="image2"></a>
+                    <a href="./images/imagesforgallery/IMG_2134.jpeg" target="_blank"><img src="./images/imagesforgallery/IMG_2134.jpeg" alt="image3"></a>
+                    <a href="./images/imagesforgallery/IMG_3618.jpeg" target="_blank"><img src="./images/imagesforgallery/IMG_3618.jpeg" alt="image4"></a>
+                    <a href="./images/imagesforgallery/IMG_1408.jpeg" target="_blank"><img src="./images/imagesforgallery/IMG_1408.jpeg" alt="image5"></a>
+                    <a href="./images/imagesforgallery/IMG_3672.jpeg" target="_blank"><img src="./images/imagesforgallery/IMG_3672.jpeg" alt="image6"></a>
+                    <a href="./images/imagesforgallery/IMG_7523.jpeg" target="_blank"><img src="./images/imagesforgallery/IMG_7523.jpeg" alt="image7"></a>
+                    <a href="./images/imagesforgallery/IMG_8047.jpeg" target="_blank"><img src="./images/imagesforgallery/IMG_8047.jpeg" alt="image8"></a>
+                </div>
+            </section>
+       </main>
+    </body>
+</html>

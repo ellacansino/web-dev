@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WebDev Project</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            html {
+                font-size: 20px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            body{
+                height: 190vh;
+                background: url(./images/pexels-ahmed-muntasir-912050.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center ;
+            }
+
+            header {
+                height: 3.3rem;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            header nav ul li {
+                display: inline-block;
+                font-weight: 700;
+                margin: 1rem 1.5rem 1rem
+            }
+
+            header nav ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            header nav ul li a:hover {
+                border-bottom: 2px solid #130c1a;
+                color: #000;
+                text-decoration: none;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 3rem;
+            }
+
+            section h1 {
+                color: #fff;
+            }
+
+            table {
+                color: #fff;
+                background: rgba(0,0,0, .5);
+                padding: 2rem;
+                width: 70%;
+                font-size: 5px;
+            }
+            tr div {
+                display: flex;
+                flex-direction: row;
+            }
+
+            table thead th{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            tr th img {
+                width: 200px;
+            }
+
+            table tbody td{
+                font-size: 1rem;
+            }
+
+            tr td a {
+                text-decoration: none;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            .career-row, .skill-row {
+                margin: 1rem 0 0;
+                display: inline-block;
+                margin-bottom: 1.2em;
+            }
+
+            td ul li {
+                list-style-position: inside;
+            }
+
+            .section-title {
+                color: #000;
+                padding: .4rem;
+                border-bottom: 2px solid #fff;
+                border-radius: 5px;
+            }
+
+            .message-row {
+                padding: 1rem;
+            }
+
+        </style>
+    </head>
+    <body>
+       <header>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                </ul>
+                <hr>
+            </nav>
+       </header>
+
+       
+       <main>
+            <section>
+                <h1>My Resume</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><h1>Daniella Cansino</h1> <br> Aircraft Maintenance Technician</th>
+                            <th><img src="./images/imagesforgallery/IMG_2134.jpeg" alt="ResumeImage"></th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>Location: Plaridel, Bulacan, Philippines</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="tel:+639663875746">Contact: +63 966 387 5746</a></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="mailto: @ellacansino2001@gmail.com">Email: ellacansino2001@gmail.com</a></td>
+                        </tr>
+
+                        <tr class="career-row">
+                            <td class="section-title" colspan="2">Career Objectives</td>
+                        </tr>
+
+                        <tr>
+                            <td class="message-row" colspan="2">I am a fresh graduate with almost three years of experience. I am focused in handling and managing day to day team operation with considerate experience to composite, structures, line, cabin, and base maintenance.</td>
+                        </tr>
+
+                        <tr class="skill-row">
+                            <td class="section-title" colspan="2">Additional Skills</td>
+                        </tr>
+
+                        <tr>
+                            <td class="message-row"> 
+                                <ul>
+                                    <li>Problem Solving Skill</li>
+                                    <li>Mathematical Thinking</li>
+                                    <li>Teamwork Skill</li>
+                                    <li>Critical Thinking</li>
+                                    <li>Communication Skill</li>
+                                    <li>Computer Literate</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+    
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+
+            </section>
+       </main>
+    </body>
+</html>

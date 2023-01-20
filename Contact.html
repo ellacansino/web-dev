@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WebDev Project</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            html {
+                font-size: 20px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            body{
+                height: 150vh;
+                background: url(./images/pexels-ahmed-muntasir-912050.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center ;
+            }
+
+            header {
+                height: 3.3rem;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            header nav ul li {
+                display: inline-block;
+                font-weight: 700;
+                margin: 1rem 1.5rem 1rem
+            }
+
+            header nav ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            header nav ul li a:hover {
+                border-bottom: 2px solid #130c1a;
+                color: #000;
+                text-decoration: none;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 3rem;
+            }
+
+            section h1 {
+                color: #fff;
+            }
+
+            section form {
+                width: 50%;
+                height: 35rem;
+                background-color: rgba(19, 12, 26, .4);
+                padding: 3rem;
+                border-radius: 8px;
+                display: grid;
+                grid-template-columns: 2fr;
+                row-gap: 1rem;
+            }
+
+            form label {
+                display: block;
+            }
+
+            input[type="text"] {
+                margin-top: .4rem;
+                width: 100%;
+                height: 1.5rem;
+                border-radius: 5px;
+                outline: none;
+                background-color: transparent;
+                color: #fff;
+                margin-bottom: 1rem;
+                font-size: 17px;
+                padding: 1rem .5rem;
+            }
+
+            input[type="text"]:focus {
+                border: 2px solid #000;
+                background: #fff;
+                color: #000;
+                position: inherit;
+            }
+
+            .message-area {
+                display: flex;
+                flex-direction: column;
+                gap: 1.4rem;
+            }
+
+            .message-area label {
+                margin-bottom: .6rem;
+            }
+
+            textarea {
+                padding: .4rem;
+                display: inline-block;
+                width: 20srem;
+                outline: none;
+                border: 1px solid #fff;
+                background: transparent;
+                color: #fff;
+                font-size: 17px;
+                border-radius: 5px;
+            }
+
+            textarea:focus {
+                border: 2px solid #000;
+                background: #fff;
+                color: #000;
+                position: inherit;
+            }
+
+            form button {
+                outline: none;
+                padding: .5rem;
+                background-color: #000;
+                color: #fff;
+                font-size: .7rem;
+                font-weight: bold;
+                cursor: pointer;
+                border: none;
+                border-radius: 8rem;
+            }
+
+            form button:hover {
+                background: transparent;
+                border: 1px solid #fff;
+            }
+
+        </style>
+    </head>
+    <body>
+       <header>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                </ul>
+                <hr>
+            </nav>
+       </header>
+
+       
+       <main>
+            <section>
+                <h1>Contact Form</h1>
+                <form action="" method="get"> 
+                    <div>
+                        <div>
+                            <label for="visitor-name">Fullname</label>
+                            <input type="text" name="visitor-name" id="visitor-name" placeholder="Input Full Name">
+                            <label for="visitor-email">Email</label>
+                            <input type="text" name="visitor-email" id="visitor-email" placeholder="Input Email">
+                            <label for="visitor-subject">Subject</label>
+                            <input type="text" name="visitor-subject" id="visitor-subject" placeholder="Input Subject">
+                        </div>
+                        <div class="message-area">
+                            <div>
+                                <label for="visitor-message">Message</label>
+                                <textarea name="visitor-message" id="visitor-message" cols="60" rows="10" placeholder="Input Some Comments & Suggestions"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <button> Submit</button>
+                </form>
+            </section>
+       </main>
+    </body>
+</html>

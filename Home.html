@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WebDev Project</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            html {
+                font-size: 20px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            body{
+                height: 100vh;
+                background: url(./images/pexels-ahmed-muntasir-912050.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center ;
+            }
+
+            header {
+                height: 3.3rem;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            header nav ul li {
+                display: inline-block;
+                font-weight: 700;
+                margin: 1rem 1.5rem 1rem
+            }
+
+            header nav ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            header nav ul li a:hover {
+                border-bottom: 2px solid #130c1a;
+                color: #000;
+                text-decoration: none;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                justify-content: center;
+                align-items: center;
+            }
+
+            section h1 {
+                color: #fff;
+            }
+
+            section img {
+                width: 20rem;
+                height: 20rem;
+                border-radius: 100px;
+                margin-left: 4rem;
+                box-shadow: 0 0px 90px rgb(13, 13, 14);
+            }
+
+            section div {
+                display: flex;
+            }
+
+            section div div {
+                display: flex;
+                gap: 2rem;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 4rem 0
+            }
+
+            section div div p {
+                width: 35rem;
+                padding: 1rem;
+                background: linear-gradient(to top right, rgba(6, 11, 24, 0.5) 50%, rgba(223, 217, 217, 0.5) 100%);
+                color: #fff;
+
+            }
+            section .anchor-container {
+                width: 100%;
+                display: flex;
+                align-items: flex-end;
+            }
+
+            div div a {
+                display: inline-block;
+                text-decoration: none;
+                color: rgb(242, 250, 249);
+                background: #130c1a;
+                box-shadow: 10px 10px 50px rgb(13, 13, 14);
+                width: 8.5rem;
+                padding: 1rem;
+                text-align: center;
+                border-radius: 8px;
+                position: relative;
+                right: 0;
+            }
+
+            div div a:hover {
+                background-color: #fff;
+                color: #000;
+            }
+           
+        </style>
+    </head>
+    <body>
+       <header>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                </ul>
+                <hr>
+            </nav>
+       </header>
+
+       
+       <main>
+            <section>
+                <h1>My Personal Portfolio</h1>
+                <div>
+                    <img src="./images/main_image.jpg" alt="Just Sample Image">
+                    <div>
+                        <p>My name is Ella Cansino and I am very happy to welcome you on board. To know more about me, just click the button.</p>
+                        <div class="anchor-container"><a href="Gallery.html">View Gallery</a></div>
+                    </div>
+                </div>
+            </section>
+       </main>
+       
+    </body>
+</html>
